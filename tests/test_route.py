@@ -1,4 +1,4 @@
-"""Functional tests. Attack tests (malicious model file) arrive in phase 3."""
+"""Functional tests. Attack tests are in test_attacks.py."""
 from classifier.route import route
 
 
