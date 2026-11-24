@@ -1,0 +1,13 @@
+# Ownership and context that code cannot tell a scanner. Read by the CS54 AI-BOM scanner (phase 2).
+app: aibom-lab-ticket-classifier
+owner: it-service-desk (lab)
+business_criticality: medium
+environment: lab
+exposure: batch
+authentication: not applicable (scheduled job)
+autonomy: acts-alone             # routes tickets without review
+models:
+  - file: models/ticket_model.pkl
+    origin: trained in this repo by classifier/train.py
+  - name: distilbert-base-uncased-finetuned-sst-2-english
+    origin: Hugging Face Hub, downloaded at run time (optional sentiment step)

@@ -1,0 +1,4 @@
+# Optional: DistilBERT sentiment step. Large download (about 1 GB with torch).
+# LAB PLANTED WEAKNESS AT-12: transformers is pinned to an old release on purpose.
+transformers==4.37.2
+torch
