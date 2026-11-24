@@ -39,3 +39,6 @@ USE_DISTILBERT=1 python -m classifier.route
 ```
 python -m pytest -q
 ```
+
+The attack tests in `tests/test_attacks.py` show as `x` (expected failure): each one asserts the safe behaviour and fails today because the weakness is planted. To see why each attack succeeds, run `python -m pytest -q --runxfail tests/test_attacks.py`.
+
