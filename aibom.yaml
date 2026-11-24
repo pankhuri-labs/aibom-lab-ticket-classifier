@@ -7,7 +7,9 @@ exposure: batch
 authentication: not applicable (scheduled job)
 autonomy: acts-alone             # routes tickets without review
 models:
-  - file: models/ticket_model.pkl
+  - file: models/ticket_router.model.json
     origin: trained in this repo by classifier/train.py
-  - name: distilbert-base-uncased-finetuned-sst-2-english
+    format: JSON weights, SHA-256 pinned in classifier/route.py (phase 6, PB-11)
+  - name: distilbert/distilbert-base-uncased-finetuned-sst-2-english
     origin: Hugging Face Hub, downloaded at run time (optional sentiment step)
+    revision: pinned commit required (DISTILBERT_REVISION), remote code off (phase 6, PB-12)

@@ -1,4 +1,5 @@
 # Optional: DistilBERT sentiment step. Large download (about 1 GB with torch).
-# LAB PLANTED WEAKNESS AT-12: transformers is pinned to an old release on purpose.
-transformers==4.37.2
+# Phase 6 (CS54 PB-12): moved off 4.37.2, which matched 19 advisories in the 2026-11-24 snapshot.
+# 5.24.0 matches none of them. 5.10.0, the first fixed release for the newest one, was yanked.
+transformers==5.24.0
 torch
